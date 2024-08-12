@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://i.pinimg.com/originals/60/41/80/60418045fa29b11ffc2db8023db4d54a.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#dp{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYtqokWc2O9mDjlICbDVU2AfulXcOdK-Tdg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    text-align:center;
+    color: rgb(235, 241, 241);
+    font-size: 20px;
+    font-weight: 100px;
+    width: 35%;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 10px 10px gray;
+    margin-top: 100px;
+    margin-left: 300px;
+    position: absolute;
+    }
+.but{
+    border: 1px solid black;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: 50px;
+    background-color: rgb(253, 47, 47);
+}
+.but:hover{
+    background-color: rgb(53, 254, 39);
+}

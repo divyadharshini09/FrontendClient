@@ -1,0 +1,33 @@
+.navi{
+    display: grid;
+    grid-template-columns: 100px 550px 100px 120px 120px;
+    height: 65px;
+    background-color: rgba(232, 210, 178, 0.852);
+    border-radius: 70px;
+    padding-top: 15px;
+}
+#name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+#im{
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+}
+#n{
+    text-align: center;
+    font-size: 22px;
+  margin-top: 4px;
+  padding-top: 6px;
+   margin-bottom: 20px;
+   padding-right: 3px;
+   margin-left: 15px;
+   border: 2px solid black;
+   border-radius: 70px;
+   background-color: rgba(172, 68, 23, 0.396);
+}
+#n:hover{
+  background-color: rgba(80, 28, 28, 0.946);
+  color: rgb(240, 201, 143);
+}
