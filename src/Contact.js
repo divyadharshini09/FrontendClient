@@ -7,27 +7,28 @@ function Contact(){
         <div id='dk'>
         <form>
             <br></br>
-            <h2>
+            <h1 class="he">
               Contact Form
-            </h2>
-            <label>Full Name:</label>
+            </h1>
+            <br></br>
+            <label className='l'>Full Name:</label>
             <br></br>
             <input type="text" placeholder="Enter username/email"></input>
             <br></br>
-            <label>Email Address:</label>
+            <label className='l'>Email Address:</label>
             <br></br>
             <input type="" placeholder="Enter password"></input>
             <br></br>
-            <label>Subject:</label>
+            <label className='l'>Subject:</label>
             <br></br>
             <input type='text'></input>
             <br></br>
-            <label>Message:</label>
+            <label className='l'>Message:</label>
             <br></br>
             <textarea></textarea>
             <br></br>
             <br></br>
-            <input type="submit" class="but"></input>
+           <button class="but">Submit</button>
             <br></br>
             <br></br>
             <br></br>

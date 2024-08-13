@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from './Header';
 import {useState} from "react";
 import Axios from "axios";
-import {BrowserRouter, Routes,Route, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import './Register.css';
 function Register(){
     const [username,setUsername]=useState("");
@@ -10,11 +9,13 @@ function Register(){
     const [password,setPassword]=useState("");
     const navigate = useNavigate();
     const createUser = (e) =>{
+        e.preventDefault();
         Axios.post("http://localhost:3001/createUser",{
             username,email,password
         }).then(result=>{
            console.log(result);
-           navigate("/")
+           console.log("hi");
+           navigate("/HomePage");
         })
         .catch(err=> console.log(err));
     };
@@ -24,10 +25,11 @@ function Register(){
         <div id='dd'>
         <form>
             <br></br>
-            <h2>
+            <h1 class="he">
               Sign Up/Register  
-            </h2>
-            <label>Username:</label>
+            </h1>
+            <br></br>
+            <label className='l'>Username:</label>
             <br></br>
             <input 
             type="text" 
@@ -37,14 +39,14 @@ function Register(){
             }}>
             </input>
             <br></br>
-            <label>Email:</label>
+            <label className='l'>Email:</label>
             <br></br>
             <input type="email" placeholder="Enter email"
              onChange={(event)=>{
                 setEmail(event.target.value);
             }}></input>
             <br></br>
-            <label>Password:</label>
+            <label className='l'>Password:</label>
             <br></br>
             <input type="password" placeholder="Enter password"
              onChange={(event)=>{
@@ -52,7 +54,7 @@ function Register(){
             }}></input>
             <br></br>
             <br></br>
-            <button class="but" onClick={createUser}>Submit</button>
+            <button className="but" onClick={createUser}>Register</button>
             <br></br>
             <br></br>
             <br></br>

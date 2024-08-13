@@ -7,7 +7,8 @@ import Header from './Header';
 import Register from './Register';
 import Login from './Login';
 import Contact from './Contact';
-import Profile from './Profile'
+import HomePage from './HomePage';
+import AboutUs from './AboutUs';
 import {createBrowserRouter,RouterProvider,Route,Link,} from 'react-router-dom';
 const router = createBrowserRouter([
   {
@@ -27,8 +28,12 @@ const router = createBrowserRouter([
     element: <Contact/>
   },
   {
-    path: "/Profile",
-    element: <Profile/>
+    path: "/HomePage",
+    element: <HomePage/>
+  },
+  {
+    path: "/AboutUs",
+    element: <AboutUs/>
   }
 ]);
 createRoot(document.getElementById("root")).render(
