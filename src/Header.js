@@ -22,9 +22,9 @@ function Header(){
                     <nav className="sidebar-nav">
                         <Link to="/" onClick={toggleSidebar}>Home</Link>
                         <Link to="/AboutUs" onClick={toggleSidebar}>About Us</Link>
-                        <Link to="/mail" onClick={toggleSidebar}>Privacy Policy</Link>
-                        <Link to="/mail" onClick={toggleSidebar}>Your Privacy Rights</Link>
-                        <Link to="/mail" onClick={toggleSidebar}>Terms of Use</Link>
+                        <Link to="/" onClick={toggleSidebar}>Privacy Policy</Link>
+                        <Link to="/" onClick={toggleSidebar}>Your Privacy Rights</Link>
+                        <Link to="/" onClick={toggleSidebar}>Terms of Use</Link>
                     </nav>
          </div> 
     </nav>

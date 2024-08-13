@@ -11,7 +11,7 @@ function Login() {
 
     const loginUser = (e) => {
         e.preventDefault();
-        Axios.post("http://localhost:3001/loginUser", { email })
+        Axios.post("https://backendserver-46se.onrender.com", { email })
             .then((result) => {
                 const { status, message } = result.data;
                 console.log(message);
