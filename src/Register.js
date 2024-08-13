@@ -10,7 +10,7 @@ function Register(){
     const navigate = useNavigate();
     const createUser = (e) =>{
         e.preventDefault();
-        Axios.post("https://backendserver-46se.onrender.com",{
+        Axios.post("https://backendserver-6id0.onrender.com/createUser",{
             username,email,password
         }).then(result=>{
            console.log(result);

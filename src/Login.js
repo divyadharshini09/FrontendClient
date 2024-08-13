@@ -11,7 +11,7 @@ function Login() {
 
     const loginUser = (e) => {
         e.preventDefault();
-        Axios.post("https://backendserver-46se.onrender.com", { email })
+        Axios.post("https://backendserver-6id0.onrender.com/loginUser", { email })
             .then((result) => {
                 const { status, message } = result.data;
                 console.log(message);
@@ -35,7 +35,7 @@ function Login() {
                         <br />
                         <h1 className='he'>Login</h1>
                         <br />
-                        {errorMessage && <div className="error-message">{errorMessage}</div>} {/* Display error message */}
+                        {errorMessage && <div className="error-message">{errorMessage}</div>}
                         <br></br>
                         <label className='l'>Email:</label>
                         <br />
